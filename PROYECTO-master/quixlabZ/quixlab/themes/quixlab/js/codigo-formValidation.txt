@@ -1,0 +1,27 @@
+$(document).on('keyup','#precio1', function(){
+
+	var precio1 = 0;
+	var precio2 = 0;
+	precio1= document.getElementById("precio1").value;
+	precio2 = document.getElementById("precio2").value;
+
+	var total = 0;
+	total = parseInt(precio1);
+	total += parseInt(precio2);
+	document.getElementById("total").value = total;
+
+})
+
+$(document).on('keyup','#precio2', function(){
+	
+	var precio1 = 0;
+	var precio2 = 0;
+	precio1= document.getElementById("precio1").value;
+	precio2 = document.getElementById("precio2").value;
+
+	var total = 0;
+	total = parseInt(precio1);
+	total += parseInt(precio2);
+	document.getElementById("total").value = total;
+
+})
